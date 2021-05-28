@@ -1,0 +1,13 @@
+@media (prefers-color-scheme: dark) {
+    :root{
+        --body: #151437;
+        --txt: #fff;
+        --dots: #EBEBEB;
+        --title-tab: #151437;
+        --footer-link: #fff;
+    }
+    .logo::before{
+        content: url(../img/svg/logo-dark.svg);
+    }
+}
+
