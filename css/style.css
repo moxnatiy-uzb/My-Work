@@ -106,6 +106,12 @@ p {
 }
 
 
+
+
+
+
+
+
 /* --===Header Start===-- */
 
 .header__list {
@@ -278,6 +284,8 @@ p {
 
 
 
+
+
 /* --===About Start===-- */
 .about{
     position: relative;
@@ -338,11 +346,50 @@ p {
 }
 
 /* --===About End===-- */
+
+
+
+
+
+
+
 /* --===capabilities Start===-- */
 
 .capabilities
 {
     padding: 80px 0;
+}
+
+.capabilities .container{
+    position: relative;
+    
+}
+.capabilities .container::before{
+    content: '';
+    position: absolute;
+    width: 3.5vw;
+    height: 3.7vw;
+    left: 2%;
+    top: 30%;
+    border-radius: 50%;
+    border:  .3vw solid #9297ef;
+    z-index: -1;
+    animation: rotate 2s linear infinite alternate;
+    box-shadow: 0px 0px 5px 3px rgba(17, 107, 17, 0.623);
+}
+
+.capabilities .container::after{
+    content: '';
+    position: absolute;
+    width: 3.5vw;
+    right: 0%;
+    height: 3.7vw;
+    z-index: -1;
+    border-radius: 50%;
+    top: -15%;
+    animation: rotate 2s linear infinite alternate;
+
+border: .3vw solid #9297EF;
 }
 
 .capabilities__title
@@ -418,3 +465,78 @@ overflow: hidden;
 }
 
 /* --===capabilities end===-- */
+
+
+
+
+
+/* --===Works Start===-- */
+.works{
+    padding-bottom: 220px;
+}
+
+.works__title{
+    margin-bottom: 30px;
+}
+.works__tab-link{
+    font-size: 18px;
+    background: var(--body);
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    color: var(--title);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: .4s;
+    border: none;
+ 
+}
+.works__tab-link.active{
+    background: var(--btn);
+    color: var(--body);
+}
+
+
+.list-group-item+.list-group-item.active{
+    margin: 0;
+    border: none;
+}
+.works__tab-image{
+    height: 100%;
+    min-height: 320px;
+    overflow: hidden;
+    
+}
+.works__tab-img{
+    max-height: 320px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.works__tab-desc {
+    border-radius: 8px;
+    background: var(--body);
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    padding: 20px;
+}
+.works__tab-title{
+    font-size: 24px;
+}
+.works__tab-txt{
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--txt);
+    text-transform: capitalize;
+}
+.works__tab-btn{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 190px;
+}
+
+
+
+
+/* --===Works end===-- */
